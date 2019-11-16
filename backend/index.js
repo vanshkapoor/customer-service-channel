@@ -38,6 +38,7 @@ app.post('/users', (req, res) => {
 });
 
 app.post('/authenticate', (req, res) => {
+    console.log("authenticate");
     const authData = chatkit.authenticate({
     userId: req.query.user_id,
     });
